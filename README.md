@@ -107,6 +107,3 @@ headers = {'Content-Type': 'application/json; charset=utf-8', 'Cookie': 'accessT
 
 既然步数这么高了，那么某种意义上大脑就会觉得自己锻炼了，如果这还不瘦就太没天理了。
 
-扫码关注公众号～
-
-![](https://antzyun.oss-cn-beijing.aliyuncs.com/20201025175233.png)
