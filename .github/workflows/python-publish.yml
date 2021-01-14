@@ -33,5 +33,7 @@ jobs:
         TWINE_USERNAME: ${{ secrets.USERNAME }}
         TWINE_PASSWORD: ${{ secrets.PASSWORD }}
         TWINE_STEP: ${{ secrets.STEP }}
+        USERNAME: ${{ secrets.USERNAME }}
+        PASSWORD: ${{ secrets.PASSWORD }}
       run: |
-        python main.py ${TWINE_USERNAME} ${TWINE_PASSWORD} 
+        python main.py
