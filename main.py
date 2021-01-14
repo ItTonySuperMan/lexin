@@ -105,8 +105,8 @@ class Step:
 
 if __name__ == '__main__':
     # monkey.patch_all()
-    username = sys.argv[1]
-    password = sys.argv[2]
+    username = os.environ["USERNAME"]
+    password = os.environ["PASSWORD"]
     user_info = {username: password,  # add your account here
                  }
     zqy = Step(user_info)
