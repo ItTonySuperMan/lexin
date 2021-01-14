@@ -1,17 +1,13 @@
 # 乐心刷步
 
-~~ 接口失效，不能用啦（这个接口可能是乐心运动故意暴露出来的，现在需要买他们的运动记步设备才能同步，所以不用再管这个仓库啦～）~~
+~~接口失效，不能用啦（这个接口可能是乐心运动故意暴露出来的，现在需要买他们的运动记步设备才能同步，所以不用再管这个仓库啦～）
 
-#### 在CasterWx的仓库lexin基础上更改了接口，仓库能依旧使用
-
-![](https://antzyun.oss-cn-beijing.aliyuncs.com/20201025174629.png)
-
-
-> 我不歧视女性，也不歧视胖子，但你，是个女胖子。
+#### 在CasterWx的仓库lexin基础上更改了接口，仓库能依旧使用，步数是随机的.
 
 
 
-> 使用方式：secrets中添加USERNAME用户名，PASSWORD密码，STEP目标步数
+
+> 使用方式：secrets中添加USERNAME用户名，PASSWORD密码
 
 
 
@@ -42,7 +38,7 @@ http://app.mi.com/details?id=gz.lifesense.weidong
 
 https://github.com/CasterWx/lexin
 
-将该仓库fork，然后和前文B站自动投币中方式类似，在secrets中添加三个环境变量，分别是USERNAME用户名，PASSWORD密码，STEP目标步数。
+将该仓库fork，然后和前文B站自动投币中方式类似，在secrets中添加三个环境变量，分别是USERNAME用户名，PASSWORD密码
 
 此处为了图方便，用了官方的打包脚本。
 
@@ -80,13 +76,6 @@ jobs:
 ```
 
 然后在Action中点击run即可，每日默认六点十分会自动执行。
-
-如下可以看到步数修改成功。
-
-![image.png](https://www.aloli.icu/upload/2020/10/image-c7d13b90e46d4b7497b9ea1519661f90.png)
-
-
-![image.png](https://www.aloli.icu/upload/2020/10/image-3a70c1d574784f84a36ca90eeaf95b30.png)
 
 实现可以参考仓库内代码，只是一个简单的模拟登录，以及数据提交，此外就是GitHub Action。
 
