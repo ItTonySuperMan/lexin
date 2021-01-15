@@ -32,5 +32,6 @@ jobs:
       env:
         USERNAME: ${{ secrets.USERNAME }}
         PASSWORD: ${{ secrets.PASSWORD }}
+        key: ${{ secrets.KEY }}
       run: |
         python main.py
