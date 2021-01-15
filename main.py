@@ -92,8 +92,10 @@ class Step:
 
         if step > max(data):
             print("手机号:", phone, " 当前步数:", step, " 绑定情况:", self.bind_msg)
+            res = requests.get(url="https://sc.ftqq.com/"+ key +".send?text="+ step +"步刷入成功")
         else:
             print("手机号:", phone, " 当前步数:", max(data), " 绑定情况:", self.bind_msg)
+            res = requests.get(url="https://sc.ftqq.com/"+ key +".send?text="+ step +"步刷入成功")
 
 
     def run(self):
@@ -108,6 +110,7 @@ if __name__ == '__main__':
     # monkey.patch_all()
     username = os.environ["USERNAME"]
     password = os.environ["PASSWORD"]
+    key = os.environ["KEY"]
     user_info = {username: password,  # add your account here
                  }
     zqy = Step(user_info)
