@@ -35,4 +35,3 @@ jobs:
         KEY: ${{ secrets.KEY }}
       run: |
         python main.py
-        python main.py
