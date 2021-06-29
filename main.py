@@ -100,7 +100,7 @@ class Step:
 
     def run(self):
         for phone, pwd in self.user_info.items():
-            self.set_step(*(self.get_id_token(phone, pwd)), random.randint(88888, 99999))
+            self.set_step(*(self.get_id_token(phone, pwd)), random.randint(88888, 88890))
             time.sleep(2)
             # jobs = [gevent.spawn(self.set_step, *(self.get_id_token(phone, pwd)), random.randint(7000, 15000))]
             # gevent.joinall(jobs)
